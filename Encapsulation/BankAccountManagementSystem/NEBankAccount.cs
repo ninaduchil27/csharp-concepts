@@ -1,7 +1,7 @@
 
 // Not Encapsulated
 
-class BankAccount
+class NEBankAccount
 {
     public decimal Balance;
 
@@ -12,7 +12,7 @@ class MainEntry
 public static void Main(String[] args)
 {
 
-    BankAccount a = new BankAccount();
+    NEBankAccount a = new NEBankAccount();
 
     Console.WriteLine("Changing balance...");
     a.Balance = -500;
