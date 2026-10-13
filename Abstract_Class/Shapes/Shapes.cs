@@ -1,7 +1,5 @@
 using System;
 
-namespace ShapeAbstractClass
-{
 public abstract class Shape
 {
     public String Name { get; set; } = String.Empty;
@@ -57,7 +55,5 @@ class MainEntry
         circle.Display();
         rectangle.Display();
     }
-
-}
 
 }

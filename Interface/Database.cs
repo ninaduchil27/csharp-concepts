@@ -21,7 +21,6 @@ class SQLDatabase : IDatabase
     {
         Console.WriteLine("Disconnected from SQL Database");
     }
-
 }
 
 class NoSQLDatabase : IDatabase
@@ -38,7 +37,7 @@ class NoSQLDatabase : IDatabase
 
     public void Disconnect()
     {
-    Console.WriteLine("Disconnected from NoSQL Database");   
+        Console.WriteLine("Disconnected from NoSQL Database");   
     }
 }
 
@@ -57,8 +56,6 @@ public class DatabaseManager
         _database.InsertData("sample_data1");
         _database.Disconnect();
     }
-
-
 }
 
 class MainEntry
@@ -69,7 +66,6 @@ class MainEntry
         dbm.AddData();
 
         databaseManager = new DatabaseManager(new NoSQLDatabase());
-        dbm.AddData();
-        
+        dbm.AddData();        
     }
 }
