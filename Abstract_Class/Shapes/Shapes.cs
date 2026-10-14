@@ -2,7 +2,7 @@ using System;
 
 public abstract class Shape
 {
-    public String Name { get; set; } = String.Empty;
+    public string Name { get; set; } = string.Empty;
 
     public abstract double Area();
 
@@ -10,50 +10,47 @@ public abstract class Shape
     {
         Console.WriteLine($"Area of shape {Name} is: {Area()}");        
     }
-
 }
 
 public class Circle : Shape
 {
-    double Radius { get; set; }
+    private readonly double _radius { get; set; }
     public Circle(double radius)
     {
         Name = "Circle";
-        Radius = radius;
+        _radius = radius;
     }
     public override double Area()
     {
-        return 3.14 * (Radius * Radius); 
+        return Math.PI * (_radius * _radius); 
     }
-
 }
 
 public class Rectangle : Shape
 {
-    double Width { get; set; }
-    double Height { get; set; }
+    private readonly double _width { get; set; }
+    private readonly double _height { get; set; }
 
     public Rectangle(double width, double height)
     {
         Name = "Rectangle";
-        Width = width;
-        Height = height;
+        _width = width;
+        _height = height;
     }
    public override double Area()
    {
-        return Width * Height;        
+        return _width * _height;        
    }
-
 }
 
-class MainEntry
+class Program
 {
     public static void Main(string[] args)
     {
         Circle circle = new Circle(5);
-        Rectangle rectangle = new Rectangle(5,10);
+        Rectangle rectangle = new Rectangle(5, 10);
+
         circle.Display();
         rectangle.Display();
     }
-
 }

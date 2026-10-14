@@ -20,19 +20,18 @@ public class Cat : Animal
     }
 }
 
-public class MainEntry
+public class Program
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
-        Animal myDog = new Dog();
-        Animal myCat = new Cat();
-        MakeAnimalSound(myDog);
-        MakeAnimalSound(myCat);        
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        MakeAnimalSound(dog);
+        MakeAnimalSound(cat);        
     }
 
     static void MakeAnimalSound(Animal animal)
     {
         animal.Sound();   
     }
-
 }

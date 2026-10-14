@@ -13,9 +13,9 @@ class Car : Vehicle
     }
 }
 
-class MainEntry
+class Program
 {
-    static void Main()
+    public static void Main()
     {
         Car car = new Car();
         car.Start();

@@ -2,33 +2,36 @@ using System;
 
 class Program
 {
-    static void Main (String[] args)
+    public static void Main (string[] args)
     {
-        int x, y, result;
+        int firstNumber, secondNumber, result;
+
         try
         {
-        Console.WriteLine("Enter first number: ");
-        x = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter second number: ");
-        y = int.Parse(Console.ReadLine());
-        result = x / y;
-        Console.WriteLine($"Result: {result}");       
+            Console.WriteLine("Enter first number:");
+            firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            secondNumber = int.Parse(Console.ReadLine());
+            
+            result = firstNumber / secondNumber;
+            Console.WriteLine($"Result: {result}");       
         }
         catch(FormatException fe)
         {
-            Console.WriteLine("Caught FormatException");
+            Console.WriteLine("Invalid number format.");
         }
         catch(DivideByZeroException dbze)
         {
-            Console.WriteLine("Caught DivideByZeroException");
+            Console.WriteLine("Cannot divide by zero.");
         }
         catch(Exception e)
         {
-            Console.WriteLine("Generic catch block");
+            Console.WriteLine("An unexpected error occured.");
         }
         finally
         {
-            Console.WriteLine("Executed successfully");
+            Console.WriteLine("Execution completed.");
         }
     }
 }

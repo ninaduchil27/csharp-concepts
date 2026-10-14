@@ -3,16 +3,17 @@ using System;
 public interface IDatabase
 {  
     void Connect();
-    void InsertData(String data);
+    void InsertData(string data);
     void Disconnect();
 }
 class SQLDatabase : IDatabase
-{
+{    
     public void Connect()
     {
         Console.WriteLine("Connected to SQL Database");
     }
-    public void InsertData(String data)
+ 
+    public void InsertData(string data)
     {
         Console.WriteLine("Data inserted");
     }
@@ -21,6 +22,7 @@ class SQLDatabase : IDatabase
     {
         Console.WriteLine("Disconnected from SQL Database");
     }
+    
 }
 
 class NoSQLDatabase : IDatabase
@@ -30,9 +32,9 @@ class NoSQLDatabase : IDatabase
         Console.WriteLine("Connected to NoSQL Database");
     }
 
-    public void InsertData(String data)
+    public void InsertData(string data)
     {
-        Console.WriteLine("Data Inserted");
+        Console.WriteLine("Data inserted");
     }
 
     public void Disconnect()
@@ -43,7 +45,7 @@ class NoSQLDatabase : IDatabase
 
 public class DatabaseManager
 {
-    private IDatabase _database;
+    private readonly IDatabase _database;
     
     public DatabaseManager(IDatabase database)
     {
@@ -58,14 +60,16 @@ public class DatabaseManager
     }
 }
 
-class MainEntry
+class Program
 {
-    public static void Main(String[] args)
+    public static void Main(string[] args)
     {
         DatabaseManager databaseManager = new DatabaseManager(new SQLDatabase());
-        dbm.AddData();
+
+        databaseManager.AddData();
 
         databaseManager = new DatabaseManager(new NoSQLDatabase());
-        dbm.AddData();        
+
+        databaseManager.AddData();        
     }
 }
