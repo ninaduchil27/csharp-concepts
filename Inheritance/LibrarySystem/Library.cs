@@ -1,38 +1,41 @@
 using System;
 
-class LibraryItem
+namespace DotNetTutorials.Inheritance
 {
-    public string Title;
-
-    public LibraryItem(string title)
+    class LibraryItem
     {
-        Title = title;
+        public string Title;
+
+        public LibraryItem(string title)
+        {
+            Title = title;
+        }
+
+        public void Borrow() 
+        {
+            Console.WriteLine("Borrowed " + Title);
+        }
     }
 
-    public void Borrow() 
+    class Book : LibraryItem
     {
-        Console.WriteLine("Borrowed " + Title);
+        public Book(string title) : base(title) { }
     }
-}
 
-class Book : LibraryItem
-{
-    public Book(string title) : base(title) { }
-}
-
-class DVD : LibraryItem
-{
-    public DVD(string title) : base(title) { }
-}
-
-class MainEntry
-{
-    static void Main()
+    class DVD : LibraryItem
     {
-        Book b = new Book("C# Basics");
-        b.Borrow();
+        public DVD(string title) : base(title) { }
+    }
 
-        DVD d = new DVD("Inception");
-        d.Borrow();
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Book b = new Book("C# Basics");
+            b.Borrow();
+
+            DVD d = new DVD("Inception");
+            d.Borrow();
+        }
     }
 }

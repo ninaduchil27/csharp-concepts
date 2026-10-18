@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/Abstraction/">
+    <Project Path="Abstraction/VehicleSystem/VehicleSystem.csproj" />
+  </Folder>
+  <Folder Name="/Abstract_Class/">
+    <Project Path="Abstract_Class/Shapes/Shapes.csproj" />
+  </Folder>
+  <Folder Name="/Encapsulation/">
+    <Project Path="Encapsulation/BankAccountManagementSystem/BankAccountManagementSystem.csproj" />
+    <Project Path="Encapsulation/BankAccountWithoutEncapsulation/BankAccountWithoutEncapsulation.csproj" />
+  </Folder>
+  <Folder Name="/Exception_Handling/">
+    <Project Path="Exception_Handling/ExceptionHandling.csproj" />
+  </Folder>
+  <Folder Name="/Inheritance/">
+    <Project Path="Inheritance/LibrarySystem/LibrarySystem.csproj" />
+  </Folder>
+  <Folder Name="/Interface/">
+    <Project Path="Interface/DatabaseTutorial.csproj" />
+  </Folder>
+  <Folder Name="/Polymorphism/">
+    <Project Path="Polymorphism/AnimalSound/AnimalSound.csproj" />
+  </Folder>
+</Solution>

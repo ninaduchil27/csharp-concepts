@@ -1,10 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Abstraction",
+    "\\Abstraction\\VehicleSystem",
     "\\Abstract_Class",
-    "\\Abstract_Class\\Shapes",
-    "\\Encapsulation"
+    "\\Delegates",
+    "\\Encapsulation",
+    "\\Encapsulation\\BankAccountManagementSystem",
+    "\\Encapsulation\\BankAccountWithoutEncapsulation",
+    "\\Enums",
+    "\\Exception_Handling",
+    "\\NamedParameters"
   ],
-  "SelectedNode": "\\Abstract_Class\\Shapes\\Shapes.cs",
+  "SelectedNode": "\\Abstraction\\VehicleSystem\\VehicleSystem.cs",
   "PreviewInSolutionExplorer": false
 }

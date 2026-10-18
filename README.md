@@ -10,3 +10,4 @@ Code examples of C# Fundamentals
 - Interface
 - Abstract Class
 - Exception Handling
+- Delegates

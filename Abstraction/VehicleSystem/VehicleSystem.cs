@@ -1,23 +1,26 @@
 using System;
 
-abstract class Vehicle
+namespace DotNetTutorials.Abstraction
 {
-    public abstract void Start();
-}
-
-class Car : Vehicle
-{
-    public override void Start()
+    abstract class Vehicle
     {
-        Console.WriteLine("Car started!");
+        public abstract void Start();
     }
-}
 
-class Program
-{
-    public static void Main()
+    class Car : Vehicle
     {
-        Car car = new Car();
-        car.Start();
+        public override void Start()
+        {
+            Console.WriteLine("Car started!");
+        }
+    }
+
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Car car = new Car();
+            car.Start();
+        }
     }
 }

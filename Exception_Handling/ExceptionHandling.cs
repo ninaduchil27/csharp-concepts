@@ -1,37 +1,40 @@
 using System;
-
-class Program
+ 
+namespace DotNetTutorials.ExceptionHandling
 {
-    public static void Main (string[] args)
+    class Program
     {
-        int firstNumber, secondNumber, result;
-
-        try
+        public static void Main (string[] args)
         {
-            Console.WriteLine("Enter first number:");
-            firstNumber = int.Parse(Console.ReadLine());
+            int firstNumber, secondNumber, result;
 
-            Console.WriteLine("Enter second number:");
-            secondNumber = int.Parse(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Enter first number:");
+                firstNumber = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter second number:");
+                secondNumber = Convert.ToInt32(Console.ReadLine());
             
-            result = firstNumber / secondNumber;
-            Console.WriteLine($"Result: {result}");       
-        }
-        catch(FormatException fe)
-        {
-            Console.WriteLine("Invalid number format.");
-        }
-        catch(DivideByZeroException dbze)
-        {
-            Console.WriteLine("Cannot divide by zero.");
-        }
-        catch(Exception e)
-        {
-            Console.WriteLine("An unexpected error occured.");
-        }
-        finally
-        {
-            Console.WriteLine("Execution completed.");
+                result = firstNumber / secondNumber;
+                Console.WriteLine($"Result: {result}");       
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("Invalid number format.");
+            }
+            catch(DivideByZeroException)
+            {
+                Console.WriteLine("Cannot divide by zero.");
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("An unexpected error occured.");
+            }
+            finally
+            {
+                Console.WriteLine("Execution completed.");
+            }
         }
     }
 }

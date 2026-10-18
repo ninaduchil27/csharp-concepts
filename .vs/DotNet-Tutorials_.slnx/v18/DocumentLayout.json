@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstract_Class\\Shapes\\Shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Abstract_Class\\Shapes\\Shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\VehicleSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Abstraction\\VehicleSystem\\VehicleSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\NamedParameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Abstraction\\VehicleSystem\\NamedParameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Shapes.cs",
-              "DocumentMoniker": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstract_Class\\Shapes\\Shapes.cs",
-              "RelativeDocumentMoniker": "Abstract_Class\\Shapes\\Shapes.cs",
-              "ToolTip": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstract_Class\\Shapes\\Shapes.cs",
-              "RelativeToolTip": "Abstract_Class\\Shapes\\Shapes.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAxAAAAAAAAAA==",
+              "Title": "VehicleSystem.cs",
+              "DocumentMoniker": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\VehicleSystem.cs",
+              "RelativeDocumentMoniker": "Abstraction\\VehicleSystem\\VehicleSystem.cs",
+              "ToolTip": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\VehicleSystem.cs",
+              "RelativeToolTip": "Abstraction\\VehicleSystem\\VehicleSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T13:43:11.29Z",
+              "WhenOpened": "2026-10-16T06:32:28.538Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NamedParameters.cs",
+              "DocumentMoniker": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\NamedParameters.cs",
+              "RelativeDocumentMoniker": "Abstraction\\VehicleSystem\\NamedParameters.cs",
+              "ToolTip": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Abstraction\\VehicleSystem\\NamedParameters.cs",
+              "RelativeToolTip": "Abstraction\\VehicleSystem\\NamedParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:31:54.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankAccountWithEncapsulation.cs",
+              "DocumentMoniker": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs",
+              "RelativeDocumentMoniker": "Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs",
+              "ToolTip": "C:\\Users\\ninad\\Downloads\\DotNet-Tutorials_\\Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs",
+              "RelativeToolTip": "Encapsulation\\BankAccountManagementSystem\\BankAccountWithEncapsulation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T12:03:55.541Z"
             }
           ]
         }

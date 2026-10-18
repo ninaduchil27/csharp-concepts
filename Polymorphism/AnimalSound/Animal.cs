@@ -1,37 +1,40 @@
 using System;
 
-public abstract class Animal
+namespace DotNetTutorials.Polymorphism
 {
-    public abstract void Sound();
-}
-public class Dog : Animal
-{
-    public override void Sound()
+    public abstract class Animal
     {
-        Console.WriteLine("Dog barks");
-    } 
-}
-
-public class Cat : Animal
-{
-    public override void Sound()
-    {
-        Console.WriteLine("Cat meows");
+        public abstract void Sound();
     }
-}
-
-public class Program
-{
-    public static void Main(string[] args)
+    public class Dog : Animal
     {
-        Animal dog = new Dog();
-        Animal cat = new Cat();
-        MakeAnimalSound(dog);
-        MakeAnimalSound(cat);        
+        public override void Sound()
+        {
+            Console.WriteLine("Dog barks");
+        } 
     }
 
-    static void MakeAnimalSound(Animal animal)
+    public class Cat : Animal
     {
-        animal.Sound();   
+        public override void Sound()
+        {
+            Console.WriteLine("Cat meows");
+        }
+    }
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Animal dog = new Dog();
+            Animal cat = new Cat();
+            MakeAnimalSound(dog);
+            MakeAnimalSound(cat);        
+        }
+
+        static void MakeAnimalSound(Animal animal)
+        {
+            animal.Sound();   
+        }
     }
 }
